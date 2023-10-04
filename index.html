@@ -1,0 +1,41 @@
+<!--
+ * @Author: liziwei01
+ * @Date: 2023-10-04 16:19:24
+ * @LastEditors: liziwei01
+ * @LastEditTime: 2023-10-04 16:23:07
+ * @Description: file content
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Files List</h2>
+        <div class="file-list">
+            <!-- Files will be appended here by JavaScript -->
+        </div>
+
+        <div class="pagination">
+            <button onclick="prevPage()">Previous</button>
+            <span class="current-page">1</span>
+            <button onclick="nextPage()">Next</button>
+        </div>
+    </div>
+
+    <!-- Preview Modal -->
+    <div class="modal" id="previewModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content" id="modalContent">
+            <!-- Preview content will be inserted here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
