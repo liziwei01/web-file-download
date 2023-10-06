@@ -2,7 +2,7 @@
  * @Author: liziwei01
  * @Date: 2023-10-04 16:19:24
  * @LastEditors: liziwei01
- * @LastEditTime: 2023-10-04 16:23:07
+ * @LastEditTime: 2023-10-04 23:57:29
  * @Description: file content
 -->
 <!DOCTYPE html>
@@ -15,7 +15,11 @@
 </head>
 <body>
     <div class="container">
-        <h2>Files List</h2>
+		<div class="top-bar">
+			<h2>Files List</h2>
+			<button onclick="triggerUpload()">Upload</button>
+			<input type="file" id="fileInput" style="display: none;" onchange="uploadFile(this)" />
+		</div>
         <div class="file-list">
             <!-- Files will be appended here by JavaScript -->
         </div>
